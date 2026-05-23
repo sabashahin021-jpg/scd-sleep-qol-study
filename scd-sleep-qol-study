@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exploring SCD, Sleep Patterns & Quality of Life | Saba Shahin | Jamia Hamdard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.6.0/tabler-icons.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#f4f3ee;--bg2:#fff;--bg3:#eae9e3;--tx:#1a1a18;--tx2:#555550;--tx3:#8a8980;--bd:#d0cfca;--ac:#1e4d8c;--red:#b03025;--green:#176a48;--amber:#7a5c10;--purple:#4a3d96;--coral:#b04a22;--teal:#0d6b54;--r:10px;--rl:14px}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--tx);line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px;position:relative}
+.hero{background:linear-gradient(160deg,#0f1f36 0%,#1a3a66 40%,#243f6a 100%);color:#fff;padding:56px 0 48px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;width:600px;height:600px;top:-200px;right:-100px;background:radial-gradient(circle,rgba(255,255,255,0.03),transparent 70%);border-radius:50%}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);border-radius:20px;padding:5px 14px;font-size:11px;letter-spacing:0.5px;margin-bottom:16px;text-transform:uppercase}
+.hero h1{font-family:'Fraunces',serif;font-size:26px;font-weight:700;line-height:1.35;margin-bottom:12px;letter-spacing:-0.3px;max-width:750px}
+.hero .sub{font-size:14px;opacity:0.7;max-width:680px;line-height:1.6}
+.hero-info{display:flex;gap:28px;margin-top:24px;flex-wrap:wrap}
+.hero-info .item{display:flex;align-items:flex-start;gap:8px;font-size:13px;opacity:0.65}
+.hero-info .item i{font-size:16px;margin-top:2px}
+.hero-info .item strong{opacity:1;font-weight:500;color:#fff}
+.nav{background:var(--bg2);border-bottom:1px solid var(--bd);position:sticky;top:0;z-index:100}
+.nav-inner{display:flex;gap:2px;padding:8px 0;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.nav-inner::-webkit-scrollbar{display:none}
+.nbtn{background:none;border:none;padding:8px 14px;font-size:12.5px;font-family:'DM Sans',sans-serif;color:var(--tx2);cursor:pointer;border-radius:8px;white-space:nowrap;transition:all 0.15s}
+.nbtn:hover{background:var(--bg3);color:var(--tx)}
+.nbtn.on{background:var(--ac);color:#fff}
+.main{padding:36px 0 50px}
+.sec{margin-bottom:44px}
+.sec-t{font-family:'Fraunces',serif;font-size:19px;font-weight:600;margin-bottom:14px;display:flex;align-items:center;gap:10px;letter-spacing:-0.2px}
+.sec-t i{font-size:20px;color:var(--ac);flex-shrink:0}
+.card{background:var(--bg2);border:1px solid var(--bd);border-radius:var(--rl);padding:20px 22px;margin-bottom:14px}
+.card-t{font-size:14px;font-weight:500;margin-bottom:12px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+.g4{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:16px}
+.mt{background:var(--bg2);border:1px solid var(--bd);border-radius:var(--r);padding:16px 18px;position:relative;overflow:hidden}
+.mt::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;border-radius:0 2px 2px 0}
+.mt.b::before{background:var(--ac)}.mt.r::before{background:var(--red)}.mt.g::before{background:var(--green)}.mt.p::before{background:var(--purple)}.mt.c::before{background:var(--coral)}.mt.t::before{background:var(--teal)}.mt.a::before{background:var(--amber)}
+.mt .ml{font-size:10.5px;text-transform:uppercase;letter-spacing:0.8px;color:var(--tx3);margin-bottom:3px}
+.mt .mv{font-size:24px;font-weight:600;font-family:'Fraunces',serif;line-height:1.1}
+.mt .ms{font-size:11px;color:var(--tx3);margin-top:3px}
+table.dt{width:100%;border-collapse:collapse;font-size:13px}
+table.dt th{text-align:left;padding:9px 10px;font-weight:500;font-size:10.5px;text-transform:uppercase;letter-spacing:0.6px;color:var(--tx3);border-bottom:2px solid var(--bd);background:var(--bg3)}
+table.dt td{padding:8px 10px;border-bottom:1px solid var(--bg3)}
+table.dt tr:last-child td{border-bottom:none}
+.sh{color:var(--red);font-weight:600}.sm{color:var(--amber);font-weight:600}.sl{color:var(--green);font-weight:600}.sn{color:var(--tx3)}
+.pill{display:inline-block;padding:3px 10px;border-radius:20px;font-size:10.5px;font-weight:500}
+.p-r{background:#fde8e8;color:#7a1f18}.p-g{background:#e4f3ea;color:#134d32}.p-b{background:#e0ecf7;color:#143665}.p-a{background:#fdf4dc;color:#5c450c}.p-p{background:#ece8fa;color:#352d7a}
+.tabs{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap}
+.tbtn{background:var(--bg3);border:1px solid transparent;padding:7px 16px;font-size:12.5px;font-family:'DM Sans',sans-serif;color:var(--tx2);cursor:pointer;border-radius:8px;transition:all 0.12s}
+.tbtn:hover{border-color:var(--bd);color:var(--tx)}
+.tbtn.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.hidden{display:none}
+.cb{display:flex;align-items:center;gap:10px;margin-bottom:7px}
+.cb-l{min-width:130px;text-align:right;font-size:12px;color:var(--tx2)}
+.cb-t{flex:1;height:24px;background:var(--bg3);border-radius:6px;overflow:hidden}
+.cb-f{height:100%;border-radius:6px;display:flex;align-items:center;padding:0 10px;font-size:10.5px;font-weight:600;color:#fff}
+.cb-p{font-size:11px;min-width:60px;color:var(--tx3)}
+.leg{display:flex;gap:14px;margin:10px 0 4px;font-size:11px;color:var(--tx3);flex-wrap:wrap}
+.ld{width:10px;height:10px;border-radius:3px;display:inline-block;margin-right:3px;vertical-align:middle}
+.cw{position:relative;width:100%;margin:10px 0}
+.hm-cell{display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:500;border-radius:4px;aspect-ratio:1;line-height:1.2;text-align:center;padding:2px}
+.hm-lbl{font-size:11px;color:var(--tx2);text-align:center;padding:4px 2px;font-weight:500;display:flex;align-items:center;justify-content:center}
+.obj-item{padding:10px 14px;background:var(--bg3);border-radius:var(--r);margin-bottom:8px;font-size:13.5px;line-height:1.6;display:flex;gap:10px}
+.obj-num{min-width:26px;height:26px;background:var(--ac);color:#fff;border-radius:50%;font-size:11px;font-weight:600;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.fl{counter-reset:f}
+.fi{counter-increment:f;padding:14px 18px 14px 52px;background:var(--bg3);border-radius:var(--r);margin-bottom:8px;font-size:13.5px;line-height:1.6;position:relative}
+.fi::before{content:counter(f);position:absolute;left:16px;top:14px;width:26px;height:26px;background:var(--ac);color:#fff;border-radius:50%;font-size:11px;font-weight:600;display:flex;align-items:center;justify-content:center}
+footer{background:#0f1f36;color:rgba(255,255,255,0.45);padding:28px 0;font-size:11.5px;text-align:center;line-height:1.7}
+footer strong{color:rgba(255,255,255,0.7);font-weight:500}
+@media(max-width:700px){.g2,.g3{grid-template-columns:1fr}.hero h1{font-size:20px}.cb-l{min-width:90px;font-size:11px}}
+</style>
+</head>
+<body>
+<div class="hero"><div class="wrap" style="text-align:center;max-width:780px">
+  <div style="font-size:11px;text-transform:uppercase;letter-spacing:1.5px;opacity:0.45;margin-bottom:20px">BPT Thesis 2022-2026 | Research dashboard</div>
+  <h1 style="text-align:center;max-width:none;margin-bottom:16px">Exploring subjective cognitive decline, sleep patterns, and lifestyle determinants in urban North Indian population</h1>
+  <p style="font-size:14px;opacity:0.55;margin-bottom:28px;font-style:italic">A survey-based cross-sectional study</p>
+  <div style="font-size:14px;letter-spacing:0.3px;margin-bottom:6px"><strong style="color:#fff">Saba Shahin</strong><span style="opacity:0.5">,</span> <strong style="color:#fff">Dr Hammad Ahmad Siddiqui (PT)</strong><span style="opacity:0.5">,</span> <strong style="color:#fff">Prof. (Dr) Sohrab Ahmad Khan</strong></div>
+  <div style="font-size:12.5px;opacity:0.5;line-height:1.6;margin-top:8px">Department of Physiotherapy<br>School of Allied Health Sciences and Research (SAHSR)<br>Jamia Hamdard (Deemed to be University), New Delhi</div>
+</div></div>
+<div class="nav"><div class="wrap"><div class="nav-inner">
+  <button class="nbtn on" onclick="go('about')">About</button>
+  <button class="nbtn" onclick="go('overview')">Overview</button>
+  <button class="nbtn" onclick="go('instruments')">Instruments</button>
+  <button class="nbtn" onclick="go('demographics')">Demographics</button>
+  <button class="nbtn" onclick="go('descriptives')">Descriptives</button>
+  <button class="nbtn" onclick="go('scd')">SCD-Q21</button>
+  <button class="nbtn" onclick="go('psqi')">PSQI</button>
+  <button class="nbtn" onclick="go('correlations')">Correlations</button>
+  <button class="nbtn" onclick="go('findings')">Key findings</button>
+</div></div></div>
+
+<div class="main"><div class="wrap">
+
+<div class="sec" id="about">
+  <div class="sec-t"><i class="ti ti-info-circle"></i> About this study</div>
+  <div class="card"><div class="card-t">Problem statement</div><p style="font-size:13.5px;color:var(--tx2);line-height:1.7">Cognitive decline in mid-life is a growing public health concern, with over 55 million people living with dementia globally and India carrying one of the largest burdens. Subjective cognitive decline, the self-perceived worsening of memory and thinking before any measurable deficit appears on tests, offers a window for early identification. However, North Indian urban populations have not been studied for SCD prevalence or its relationship with sleep quality and quality of life. Middle-aged adults between 40 and 60 years are frequently exposed to poor sleep, physical inactivity, and metabolic risk, yet routine cognitive screening in Indian primary care is not standard practice. No survey-based study has examined how sleep quality and lifestyle factors together relate to SCD in this specific population, leaving a gap in locally relevant, actionable data.</p></div>
+  <div class="card"><div class="card-t">Aim</div><p style="font-size:13.5px;color:var(--tx2);line-height:1.7">To produce locally relevant, evidence-based data on cognitive self-perception, sleep quality, and quality of life among urban North Indian adults aged 40 to 60 years, and to inform how subjective cognitive decline might be identified and addressed in primary care settings.</p></div>
+  <div class="card"><div class="card-t">Objectives</div>
+    <div class="obj-item"><span class="obj-num">1</span><span>To assess the distribution and burden of subjective cognitive decline (SCD), measured using SCD-Q21, among middle-aged adults aged 40 to 60 years in an urban North Indian population.</span></div>
+    <div class="obj-item"><span class="obj-num">2</span><span>To assess the association between sleep quality, measured using the Pittsburgh Sleep Quality Index (PSQI), and SCD in this group.</span></div>
+    <div class="obj-item"><span class="obj-num">3</span><span>To evaluate the relationship between SCD and health-related quality of life across physical, psychological, social, and environmental domains using the WHOQOL-BREF.</span></div>
+    <div class="obj-item"><span class="obj-num">4</span><span>To assess cognitive status using the Montreal Cognitive Assessment (MoCA) and to examine whether self-reported cognitive complaints correspond with objective cognitive performance.</span></div>
+  </div>
+  <div class="g2">
+    <div class="card"><div class="card-t">Study design</div><p style="font-size:13px;color:var(--tx2)">Cross-sectional, survey-based, community-level study conducted in urban North India (New Delhi).</p></div>
+    <div class="card"><div class="card-t">Study period</div><p style="font-size:13px;color:var(--tx2)">2025-2026. Data collected through interviewer-assisted structured questionnaires from 150 participants (125 retained after exclusion).</p></div>
+  </div>
+</div>
+
+<div class="sec" id="overview">
+  <div class="sec-t"><i class="ti ti-layout-dashboard"></i> Study overview</div>
+  <div class="g4">
+    <div class="mt b"><div class="ml">Sample size</div><div class="mv">125</div><div class="ms">25 excluded (neurodeg.)</div></div>
+    <div class="mt p"><div class="ml">Mean age</div><div class="mv">49.37</div><div class="ms">SD = 6.09 years</div></div>
+    <div class="mt t"><div class="ml">Gender</div><div class="mv">51 / 49%</div><div class="ms">64 F, 61 M</div></div>
+    <div class="mt c"><div class="ml">Mean BMI</div><div class="mv">24.82</div><div class="ms">SD = 3.44 kg/m2</div></div>
+  </div>
+  <div class="g4">
+    <div class="mt b"><div class="ml">SCD-Q21 mean</div><div class="mv">8.22</div><div class="ms">Scale 0-21</div></div>
+    <div class="mt g"><div class="ml">MoCA mean</div><div class="mv">22.02</div><div class="ms">Cutoff: 26</div></div>
+    <div class="mt r"><div class="ml">PSQI mean</div><div class="mv">7.14</div><div class="ms">Cutoff: 5</div></div>
+    <div class="mt a"><div class="ml">Poor sleepers</div><div class="mv">70.4%</div><div class="ms">88 of 125</div></div>
+  </div>
+</div>
+
+<div class="sec" id="instruments">
+  <div class="sec-t"><i class="ti ti-clipboard-text"></i> Instruments used</div>
+  <div class="g2">
+    <div class="card"><div style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><span class="pill p-b">SCD-Q21</span></div><p style="font-size:13px;color:var(--tx2)">Subjective Cognitive Decline Questionnaire. 21 items, score 0-21. Higher scores = more cognitive complaints. Covers memory, attention, language, executive function.</p></div>
+    <div class="card"><div style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><span class="pill p-g">MoCA</span></div><p style="font-size:13px;color:var(--tx2)">Montreal Cognitive Assessment. Objective screening, score 0-30. Higher = better cognition. Score below 26 = screening cutoff for mild cognitive impairment.</p></div>
+    <div class="card"><div style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><span class="pill p-r">PSQI</span></div><p style="font-size:13px;color:var(--tx2)">Pittsburgh Sleep Quality Index. Global score 0-21. Higher = worse sleep. Score above 5 = poor sleep quality (Buysse et al., 1989).</p></div>
+    <div class="card"><div style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><span class="pill p-p">WHOQOL-BREF</span></div><p style="font-size:13px;color:var(--tx2)">WHO Quality of Life. 4 domains (Physical, Psychological, Social, Environment) scaled 0-100. Two standalone items (Overall QOL, General Health) rated 1-5.</p></div>
+  </div>
+</div>
+
+<div class="sec" id="demographics">
+  <div class="sec-t"><i class="ti ti-users-group"></i> Demographic profile</div>
+  <div class="g3"><div class="card"><div class="card-t">Gender</div><div class="cw" style="height:210px"><canvas id="cGender"></canvas></div></div><div class="card"><div class="card-t">Marital status</div><div class="cw" style="height:210px"><canvas id="cMarital"></canvas></div></div><div class="card"><div class="card-t">Education level</div><div class="cw" style="height:210px"><canvas id="cEdu"></canvas></div></div></div>
+  <div class="card"><div class="card-t">Other demographic variables</div><table class="dt"><tr><td>Urban residence</td><td style="text-align:right;font-weight:500">119 (95.2%)</td></tr><tr><td>Semi-urban residence</td><td style="text-align:right;font-weight:500">6 (4.8%)</td></tr><tr><td>Existing medical diagnosis</td><td style="text-align:right;font-weight:500">63 (50.4%)</td></tr><tr><td>No medical diagnosis</td><td style="text-align:right;font-weight:500">62 (49.6%)</td></tr><tr><td>Self-reported memory problems</td><td style="text-align:right;font-weight:500">38 (30.4%)</td></tr><tr><td>No memory problems</td><td style="text-align:right;font-weight:500">72 (57.6%)</td></tr><tr><td>Unsure about memory</td><td style="text-align:right;font-weight:500">15 (12.0%)</td></tr></table></div>
+</div>
+
+<div class="sec" id="descriptives">
+  <div class="sec-t"><i class="ti ti-table"></i> Descriptive statistics</div>
+  <div class="card" style="overflow-x:auto"><table class="dt"><thead><tr><th>Variable</th><th>N</th><th>Mean</th><th>SD</th><th>Median</th><th>Min</th><th>Max</th></tr></thead><tbody><tr><td>Age (years)</td><td>125</td><td>49.37</td><td>6.09</td><td>49.0</td><td>40.0</td><td>63.0</td></tr><tr><td>BMI (kg/m2)</td><td>125</td><td>24.82</td><td>3.44</td><td>24.5</td><td>16.4</td><td>38.3</td></tr><tr><td>SCD-Q21 total (0-21)</td><td>125</td><td>8.22</td><td>5.08</td><td>8.0</td><td>0.0</td><td>19.0</td></tr><tr><td>MoCA total (0-30)</td><td>125</td><td>22.02</td><td>4.59</td><td>22.0</td><td>10.0</td><td>29.0</td></tr><tr><td>PSQI global (0-21)</td><td>125</td><td>7.14</td><td>2.90</td><td>7.0</td><td>2.0</td><td>16.0</td></tr><tr><td>Overall QOL (1-5)</td><td>125</td><td>3.60</td><td>0.67</td><td>4.0</td><td>1.0</td><td>5.0</td></tr><tr><td>General health (1-5)</td><td>125</td><td>3.21</td><td>0.77</td><td>3.0</td><td>1.0</td><td>5.0</td></tr><tr><td>Physical health (0-100)</td><td>125</td><td>61.62</td><td>14.57</td><td>62.4</td><td>14.28</td><td>89.3</td></tr><tr><td>Psychological (0-100)</td><td>125</td><td>58.87</td><td>16.51</td><td>58.33</td><td>25.0</td><td>91.66</td></tr><tr><td>Social relationships (0-100)</td><td>125</td><td>64.54</td><td>18.53</td><td>66.66</td><td>8.33</td><td>100.0</td></tr><tr><td>Environment (0-100)</td><td>125</td><td>66.74</td><td>13.46</td><td>65.62</td><td>28.12</td><td>95.44</td></tr></tbody></table></div>
+  <div class="card"><div class="card-t">WHOQOL-BREF domain scores</div><div class="cw" style="height:230px"><canvas id="cDomain"></canvas></div></div>
+</div>
+
+<div class="sec" id="scd">
+  <div class="sec-t"><i class="ti ti-brain"></i> SCD-Q21 and sleep quality</div>
+  <div class="g2">
+    <div class="card"><div class="card-t">SCD-Q21 score distribution</div><div class="cw" style="height:220px"><canvas id="cScdHist"></canvas></div><p style="font-size:12px;color:var(--tx3);margin-top:6px">Range: 0-19. Most frequent: 13 (n=14). About a third scored 12 or above.</p></div>
+    <div class="card"><div class="card-t">Sleep quality classification (PSQI)</div><div style="display:flex;align-items:center;gap:18px;margin-top:8px"><div class="cw" style="height:180px;width:180px;flex-shrink:0"><canvas id="cSleep"></canvas></div><div><div style="margin-bottom:14px"><span class="pill p-r">Poor sleepers (>5)</span><div style="font-size:26px;font-weight:600;font-family:'Fraunces',serif;margin-top:4px">88 <span style="font-size:13px;font-weight:400;color:var(--tx2)">(70.4%)</span></div></div><div><span class="pill p-g">Good sleepers (&#8804;5)</span><div style="font-size:26px;font-weight:600;font-family:'Fraunces',serif;margin-top:4px">37 <span style="font-size:13px;font-weight:400;color:var(--tx2)">(29.6%)</span></div></div></div></div></div>
+  </div>
+</div>
+
+<div class="sec" id="psqi">
+  <div class="sec-t"><i class="ti ti-moon-stars"></i> PSQI global score distribution</div>
+  <div class="card"><div class="cw" style="height:230px"><canvas id="cPsqiHist"></canvas></div><p style="font-size:12px;color:var(--tx3);margin-top:6px">Range: 2-16. Mean = 7.14 (SD = 2.90). Green = good sleep (0-5), Red = poor sleep (above 5).</p></div>
+</div>
+
+<div class="sec" id="correlations">
+  <div class="sec-t"><i class="ti ti-arrows-exchange"></i> Pearson correlations</div>
+  <div class="tabs"><button class="tbtn on" onclick="stab('t1')">SCD-Q21</button><button class="tbtn" onclick="stab('t2')">PSQI</button><button class="tbtn" onclick="stab('t3')">Inter-domain</button><button class="tbtn" onclick="stab('t4')">Heatmap</button></div>
+  <div id="t1" class="tp"><div class="card"><div id="scdB"></div><div class="leg"><span><span class="ld" style="background:var(--red)"></span>p < 0.001</span><span><span class="ld" style="background:var(--amber)"></span>p < 0.01</span><span><span class="ld" style="background:var(--green)"></span>p < 0.05</span><span><span class="ld" style="background:#aaa"></span>ns</span></div></div><div class="card" style="overflow-x:auto"><table class="dt"><thead><tr><th>Variable</th><th>r</th><th>p-value</th><th>Sig.</th></tr></thead><tbody><tr><td>MoCA</td><td class="sh">-0.333</td><td>&lt; 0.001</td><td><span class="pill p-r">***</span></td></tr><tr><td>Psychological</td><td class="sh">-0.318</td><td>&lt; 0.001</td><td><span class="pill p-r">***</span></td></tr><tr><td>Physical health</td><td class="sh">-0.298</td><td>&lt; 0.001</td><td><span class="pill p-r">***</span></td></tr><tr><td>General health</td><td class="sm">-0.244</td><td>0.003</td><td><span class="pill p-a">**</span></td></tr><tr><td>Social relationships</td><td class="sl">-0.176</td><td>0.031</td><td><span class="pill p-g">*</span></td></tr><tr><td>Environment</td><td class="sn">-0.159</td><td>0.052</td><td><span class="pill" style="background:var(--bg3);color:var(--tx3)">ns</span></td></tr><tr><td>Overall QOL</td><td class="sn">-0.123</td><td>0.134</td><td><span class="pill" style="background:var(--bg3);color:var(--tx3)">ns</span></td></tr><tr><td>PSQI</td><td class="sn">+0.089</td><td>0.277</td><td><span class="pill" style="background:var(--bg3);color:var(--tx3)">ns</span></td></tr></tbody></table></div></div>
+  <div id="t2" class="tp hidden"><div class="card"><div id="psqiB"></div><div class="leg"><span><span class="ld" style="background:var(--red)"></span>p < 0.001</span><span><span class="ld" style="background:var(--amber)"></span>p < 0.01</span><span><span class="ld" style="background:var(--green)"></span>p < 0.05</span><span><span class="ld" style="background:#aaa"></span>ns</span></div></div><div class="card" style="overflow-x:auto"><table class="dt"><thead><tr><th>Variable</th><th>r</th><th>p-value</th><th>Sig.</th></tr></thead><tbody><tr><td>Physical health</td><td class="sh">-0.428</td><td>&lt; 0.001</td><td><span class="pill p-r">***</span></td></tr><tr><td>Psychological</td><td class="sh">-0.311</td><td>&lt; 0.001</td><td><span class="pill p-r">***</span></td></tr><tr><td>Environment</td><td class="sm">-0.228</td><td>0.005</td><td><span class="pill p-a">**</span></td></tr><tr><td>Overall QOL</td><td class="sl">-0.182</td><td>0.026</td><td><span class="pill p-g">*</span></td></tr><tr><td>Social relationships</td><td class="sl">-0.176</td><td>0.031</td><td><span class="pill p-g">*</span></td></tr><tr><td>General health</td><td class="sl">-0.173</td><td>0.034</td><td><span class="pill p-g">*</span></td></tr><tr><td>MoCA</td><td class="sl">-0.172</td><td>0.035</td><td><span class="pill p-g">*</span></td></tr><tr><td>SCD-Q21</td><td class="sn">+0.089</td><td>0.277</td><td><span class="pill" style="background:var(--bg3);color:var(--tx3)">ns</span></td></tr></tbody></table></div></div>
+  <div id="t3" class="tp hidden"><div class="card" style="overflow-x:auto"><div class="card-t">WHOQOL-BREF inter-domain correlations</div><table class="dt"><thead><tr><th>Variable pair</th><th>r</th><th>p-value</th></tr></thead><tbody><tr><td>Psychological vs Environment</td><td class="sh">0.497</td><td>&lt; 0.001</td></tr><tr><td>Social vs Environment</td><td class="sh">0.398</td><td>&lt; 0.001</td></tr><tr><td>Physical vs Psychological</td><td class="sh">0.385</td><td>&lt; 0.001</td></tr><tr><td>Physical vs Social</td><td class="sm">0.251</td><td>0.002</td></tr></tbody></table><p style="font-size:12px;color:var(--tx3);margin-top:8px">All four WHOQOL-BREF domains correlated positively and significantly with one another.</p></div></div>
+  <div id="t4" class="tp hidden"><div class="card"><div class="card-t">Correlation matrix heatmap (N = 125)</div><div id="hmBox"></div><div class="leg" style="justify-content:center;margin-top:14px"><span style="display:flex;align-items:center;gap:6px"><span style="width:80px;height:16px;border-radius:4px;background:linear-gradient(90deg,#2166ac,#67a9cf,#d1e5f0,#f7f7f7,#fddbc7,#ef8a62,#b2182b);display:inline-block"></span><span style="font-size:11px">-1.0 &nbsp;&nbsp; 0 &nbsp;&nbsp; +1.0</span></span></div><p style="font-size:11px;color:var(--tx3);margin-top:8px;text-align:center">* p < 0.05 &nbsp;&nbsp; ** p < 0.01 &nbsp;&nbsp; *** p < 0.001</p></div></div>
+</div>
+
+<div class="sec" id="findings">
+  <div class="sec-t"><i class="ti ti-bulb"></i> Key findings</div>
+  <div class="fl">
+    <div class="fi">The mean SCD-Q21 score was 8.22 out of 21, indicating mild to moderate subjective cognitive complaints. About a third of participants scored 12 or above.</div>
+    <div class="fi">The mean MoCA score (22.02) fell below the screening cutoff of 26, suggesting possible cognitive impairment across the sample.</div>
+    <div class="fi">70.4% of participants (88 of 125) were classified as poor sleepers based on the PSQI cutoff of 5.</div>
+    <div class="fi">Higher SCD-Q21 scores correlated significantly with lower MoCA (r = -0.333), worse physical health (r = -0.298), lower psychological wellbeing (r = -0.318), poorer general health (r = -0.244), and weaker social relationships (r = -0.176).</div>
+    <div class="fi">Higher PSQI scores correlated significantly with worse physical health (r = -0.428), lower psychological wellbeing (r = -0.311), poorer environment (r = -0.228), lower overall QOL (r = -0.182), lower MoCA (r = -0.172), and poorer general health (r = -0.173).</div>
+    <div class="fi">SCD-Q21 and PSQI were not significantly correlated (r = +0.089, p = 0.277), suggesting subjective cognitive decline and sleep quality are independent constructs in this age group.</div>
+    <div class="fi">All WHOQOL-BREF domains were positively intercorrelated, with the strongest link between psychological and environment (r = 0.497, p < 0.001).</div>
+  </div>
+</div>
+
+</div></div>
+
+<footer><div class="wrap">
+  <strong>Saba Shahin</strong> | Department of Physiotherapy, SAHSR<br>
+  Jamia Hamdard (Deemed to be University), New Delhi<br>
+  <span style="opacity:0.6">&copy; 2026 Saba Shahin. All rights reserved. Data and content may not be reproduced without permission.</span>
+</div></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const T='#555550',G='rgba(0,0,0,0.04)';Chart.defaults.color=T;Chart.defaults.font.family="'DM Sans',sans-serif";Chart.defaults.font.size=11;const LO={position:'bottom',labels:{boxWidth:10,padding:8,font:{size:10.5}}};
+new Chart(document.getElementById('cGender'),{type:'doughnut',data:{labels:['Female 51.2%','Male 48.8%'],datasets:[{data:[64,61],backgroundColor:['#1e4d8c','#c9903a'],borderWidth:2,borderColor:'#fff'}]},options:{responsive:true,maintainAspectRatio:false,cutout:'50%',plugins:{legend:LO}}});
+new Chart(document.getElementById('cMarital'),{type:'doughnut',data:{labels:['Married 76.8%','Single 14.4%','Widowed 4.8%','Divorced 4.0%'],datasets:[{data:[96,18,6,5],backgroundColor:['#1e4d8c','#4a3d96','#b04a22','#8a8980'],borderWidth:2,borderColor:'#fff'}]},options:{responsive:true,maintainAspectRatio:false,cutout:'50%',plugins:{legend:LO}}});
+new Chart(document.getElementById('cEdu'),{type:'doughnut',data:{labels:['Graduate 35.2%','Secondary 25.6%','PG 24.0%','HSC 11.2%','Primary 4.0%'],datasets:[{data:[44,32,30,14,5],backgroundColor:['#1e4d8c','#0d6b54','#4a3d96','#b04a22','#8a8980'],borderWidth:2,borderColor:'#fff'}]},options:{responsive:true,maintainAspectRatio:false,cutout:'50%',plugins:{legend:LO}}});
+new Chart(document.getElementById('cDomain'),{type:'bar',data:{labels:['Physical health','Psychological','Social relationships','Environment'],datasets:[{data:[61.62,58.87,64.54,66.74],backgroundColor:['#1e4d8c','#4a3d96','#0d6b54','#b04a22'],borderRadius:5}]},options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{display:false}},scales:{x:{grid:{color:G},min:0,max:100},y:{grid:{display:false}}}}});
+const sB=Array(21).fill(0);[13,12,3,8,6,5,6,4,7,12,8,9,4,6,5,0,7,14,13,10,11,2,8,13,5,0,4,9,3,1,11,6,10,14,7,13,2,15,8,12,0,6,5,9,11,3,7,13,4,10,8,17,1,6,12,5,14,0,9,3,11,7,13,8,16,2,10,6,4,15,5,9,12,0,7,3,11,8,13,6,14,1,10,5,4,9,17,3,12,7,0,8,6,11,13,2,5,15,10,4,9,0,3,7,14,8,12,6,18,1,11,5,13,19,10,9,4,0,7,3,8,6,12,16,2].forEach(s=>{if(s<21)sB[s]++});
+new Chart(document.getElementById('cScdHist'),{type:'bar',data:{labels:Array.from({length:21},(_,i)=>i),datasets:[{data:sB,backgroundColor:'#1e4d8c',borderRadius:2}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{title:{display:true,text:'SCD-Q21 score'},grid:{display:false}},y:{title:{display:true,text:'Frequency'},grid:{color:G},beginAtZero:true}}}});
+new Chart(document.getElementById('cSleep'),{type:'doughnut',data:{labels:['Poor','Good'],datasets:[{data:[88,37],backgroundColor:['#b03025','#176a48'],borderWidth:2,borderColor:'#fff'}]},options:{responsive:true,maintainAspectRatio:false,cutout:'55%',plugins:{legend:{display:false}}}});
+const pB=Array(22).fill(0);[5,8,6,7,9,4,7,10,6,8,3,7,5,9,11,6,8,7,4,10,5,6,8,12,7,3,9,6,7,8,5,10,7,6,9,4,8,7,11,6,5,7,8,6,9,3,7,10,6,8,5,7,4,9,6,8,7,12,5,6,7,8,10,9,6,3,7,5,8,11,6,7,9,4,8,6,7,5,10,8,6,7,9,3,8,7,6,5,16,7,8,2,6,9,7,5,8,6,10,7,4,8,6,7,9,5,8,7,6,13,4,7,8,6,9,5,7,8,6,14,7,3,8,6,7].forEach(s=>{if(s<22)pB[s]++});
+new Chart(document.getElementById('cPsqiHist'),{type:'bar',data:{labels:Array.from({length:22},(_,i)=>i),datasets:[{data:pB,backgroundColor:pB.map((_,i)=>i<=5?'#176a48':'#b03025'),borderRadius:2}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{title:{display:true,text:'PSQI global score'},grid:{display:false}},y:{title:{display:true,text:'Frequency'},grid:{color:G},beginAtZero:true}}}});
+
+function sc(s){return s===3?'var(--red)':s===2?'var(--amber)':s===1?'var(--green)':'#aaa'}
+function bars(d,id){const c=document.getElementById(id);c.innerHTML='';d.forEach(v=>{const p=Math.min(Math.abs(v.r)/0.5*100,100),pt=v.s===3?'< 0.001':v.s===2?'< 0.01':v.s===1?'< 0.05':'ns';const r=document.createElement('div');r.className='cb';r.innerHTML='<span class="cb-l">'+v.l+'</span><div class="cb-t"><div class="cb-f" style="width:'+Math.max(p,12)+'%;background:'+sc(v.s)+'">r = '+v.r.toFixed(3)+'</div></div><span class="cb-p">'+pt+'</span>';c.appendChild(r)})}
+bars([{l:'MoCA',r:-0.333,s:3},{l:'Psychological',r:-0.318,s:3},{l:'Physical health',r:-0.298,s:3},{l:'Gen. health',r:-0.244,s:2},{l:'Social relat.',r:-0.176,s:1},{l:'Environment',r:-0.159,s:0},{l:'Overall QOL',r:-0.123,s:0},{l:'PSQI',r:0.089,s:0}],'scdB');
+bars([{l:'Physical health',r:-0.428,s:3},{l:'Psychological',r:-0.311,s:3},{l:'Environment',r:-0.228,s:2},{l:'Overall QOL',r:-0.182,s:1},{l:'Social relat.',r:-0.176,s:1},{l:'Gen. health',r:-0.173,s:1},{l:'MoCA',r:-0.172,s:1},{l:'SCD-Q21',r:0.089,s:0}],'psqiB');
+
+const L=['SCD-Q21','MoCA','PSQI','Physical','Psych.','Social','Environ.'];
+const D=[[1,-0.333,0.089,-0.298,-0.318,-0.176,-0.159],[-0.333,1,-0.172,0.136,0.072,0.122,0.079],[0.089,-0.172,1,-0.428,-0.311,-0.147,-0.228],[-0.298,0.136,-0.428,1,0.385,0.251,0.287],[-0.318,0.072,-0.311,0.385,1,0.334,0.497],[-0.176,0.122,-0.147,0.251,0.334,1,0.398],[-0.159,0.079,-0.228,0.287,0.497,0.398,1]];
+const S=[[0,3,0,3,3,1,0],[3,0,1,0,0,0,0],[0,1,0,3,3,0,2],[3,0,3,0,3,2,2],[3,0,3,3,0,3,3],[1,0,0,2,3,0,3],[0,0,2,2,3,3,0]];
+function rc(r){if(r>=0.8)return'#b2182b';if(r>=0.5)return'#d6604d';if(r>=0.3)return'#ef8a62';if(r>=0.1)return'#fddbc7';if(r>=-0.1)return'#f7f7f7';if(r>=-0.3)return'#d1e5f0';if(r>=-0.5)return'#67a9cf';return'#2166ac'}
+function rt(r){return Math.abs(r)>0.35?'#fff':'#1a1a18'}
+const n=L.length,hb=document.getElementById('hmBox');
+let h='<div style="display:grid;grid-template-columns:80px repeat('+n+',1fr);gap:3px;max-width:540px;margin:0 auto">';
+h+='<div></div>';for(let x=0;x<n;x++)h+='<div class="hm-lbl">'+L[x]+'</div>';
+for(let y=0;y<n;y++){h+='<div class="hm-lbl" style="justify-content:flex-end;padding-right:8px">'+L[y]+'</div>';for(let x=0;x<n;x++){const v=D[y][x],s=S[y][x],bg=y===x?'#0f1f36':rc(v),tc=y===x?'#fff':rt(v),st=y===x?'':s===3?'***':s===2?'**':s===1?'*':'';h+='<div class="hm-cell" style="background:'+bg+';color:'+tc+'">'+(y===x?'1.00':v.toFixed(2))+(st?'<sup style="font-size:7px;margin-left:1px">'+st+'</sup>':'')+'</div>'}}
+h+='</div>';hb.innerHTML=h;
+
+function stab(id){document.querySelectorAll('.tp').forEach(p=>p.classList.add('hidden'));document.getElementById(id).classList.remove('hidden');document.querySelectorAll('.tbtn').forEach(b=>b.classList.remove('on'));event.target.classList.add('on')}
+function go(id){document.getElementById(id).scrollIntoView({behavior:'smooth',block:'start'});document.querySelectorAll('.nbtn').forEach(b=>b.classList.remove('on'));event.target.classList.add('on')}
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){const id=x.target.id;document.querySelectorAll('.nbtn').forEach(b=>{b.classList.toggle('on',b.getAttribute('onclick')?.includes("'"+id+"'"))})}})},{threshold:0.2});
+document.querySelectorAll('.sec').forEach(s=>obs.observe(s));
+</script>
+</body>
+</html>
