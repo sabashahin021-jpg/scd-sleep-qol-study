@@ -1,1 +1,0 @@
-# scd-sleep-qol-study
